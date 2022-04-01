@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Poppins:400,500,700,800");
+
+:root {
+  --bg-full: #9c835f;
+  --back-button: #9c835f;
+  --game-title: #f9b23d;
+  --name-player: #000;
+
+  --playing: #c4c4c4;
+  --bg-result: #4c9654;
+  --versus: #bd0000;
+
+  --bold: 700;
+}
+
+html,
+body {
+  margin: auto;
+  padding: auto;
+  user-select: none;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-weight: var(--bold);
+  background-color: var(--bg-full);
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  margin: 30px 0 0 30px;
+}
+
+a {
+  color: #724c21;
+  text-decoration: none;
+}
+a:hover {
+  background-color: gold;
+  border-radius: 150px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-left: 27px;
+}
+
+.icon h1 {
+  margin-left: 20px;
+  font-size: 1.5em;
+  width: 100%;
+}
+
+section {
+  margin: 5px auto;
+}
+
+.game-area {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+
+.player-name {
+  font-size: 36px;
+}
+
+.allignK {
+  width: 100%;
+}
+
+.user-tool img {
+  width: 70%;
+}
+
+button {
+  background-color: Transparent;
+  border-color: transparent;
+  width: 30%;
+  height: 120px;
+}
+
+.your-tool {
+  cursor: pointer;
+}
+
+.your-tool:hover {
+  transform: rotate(45deg);
+  animation-name: buttonAnimate;
+  animation-duration: 1.5s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+.Versus-Reset {
+  margin: 20px 10px;
+}
+
+.Versus-Reset h1 {
+  font-size: 44px;
+  color: var(--versus);
+  font-weight: var(--bold);
+}
+
+.Versus-Reset img {
+}
+
+.chosen {
+  background-color: #c4c4c4;
+  border-radius: 30px;
+}
+.boxR {
+}
+
+.winBox {
+  height: 100px;
+  display: grid;
+  place-items: center;
+  background: #4c9654;
+  border-radius: 10px;
+  margin: 15px auto;
+  padding: 15px;
+}
+
+.drawBox {
+  height: 100px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  margin: 15px auto;
+  padding: 15px;
+  background: #035b0c;
+  border-radius: 10px;
+}
+
+@media (min-width: 750px) {
+  .game-area {
+    flex-direction: row;
+    transform: translateX(15%);
+  }
+  .used {
+    display: flex;
+    flex-direction: column;
+  }
+  .user-tool {
+    align-self: center;
+    width: 223px;
+    height: 204px;
+  }
+  .user-tool img {
+    width: 50%;
+  }
+  .Versus-Reset img {
+    width: 50px;
+    transform: translatey(100%);
+  }
+  .Versus-Reset {
+    margin: auto 50px;
+    width: 300px;
+  }
+  .Versus-Reset h1 {
+    font-size: 150px;
+  }
+  .user-choice {
+    margin: auto 5% 0 0;
+  }
+  .Com-Choice {
+    margin: auto 0 0 5%;
+  }
+}
